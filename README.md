@@ -1,38 +1,33 @@
 # Features
-* Downloads precipitation data from the National Climate Data Center (NCDC) Climate Data
-  Online Web Services.
-	* If the precipitation data has already been downloaded, it checks the last
-	  download date and appends the dataset
+* Downloads precipitation data from the National Climate Data Center (NCDC) Climate Data Online Web Services
+* If the precipitation data has already been downloaded, it checks the last download date and appends the dataset
 # Setup
-01) Download or update R and RStudio to versions:
-	R - 3.4.0 "You Stupid Darkness"
-    	RStudio - 1.0.143
+01) Download or update R and RStudio to versions
+	* R - 3.4.0 "You Stupid Darkness" 
+	* RStudio - 1.0.143
 
-02) Obtain NOAA API Key from this web address:
-	https://www.ncdc.noaa.gov/cdo-web/token
+02) Obtain NOAA API Key from this web address
+	* https://www.ncdc.noaa.gov/cdo-web/token
 
-03) These R Files must all be in the same folder:
-	"gWidgets_GUI_Functions.R"
-	"ClimateData_SPI_GUI_Functions.R"
-	"ClimateData_API_GUI_daily_Script.R"
+03) These R Files must all be in the same folder
+	* "gWidgets_GUI_Functions.R"
+	* "ClimateData_SPI_GUI_Functions.R"
+	* "ClimateData_API_GUI_daily_Script.R"
 
 ***********************************************************
 # Graphic User Interface
 03) Open "ClimateData_API_GUI_daily_Script.R" in RStudio
 
 04) CTRL+A then CTRL+R
-    The SPI and NOAA API GUI should open in a new window
+	* The SPI and NOAA API GUI should open in a new window
 
 05) Hold CTRL and click on all weather stations of interest
-
-* To download precipitation data, a Personal NOAA API Key is needed. 
-  If this is not provided, a web browser will automatically launch.
+	* To download precipitation data, a Personal NOAA API Key is needed. If this is not provided, a web browser will automatically launch.
 
 06) To update/download & plot precipitation data for selected stations
-    	a) Check "DownloadStationData" 
-	a) Click the "Select Daily Ppt Output Folder" button
-	b) Select the output folder for Ppt data from weather stations 
-	   (saved as CSVs)
+	* Check "DownloadStationData" 
+	* Click the "Select Daily Ppt Output Folder" button
+	* Select the output folder for Ppt data from weather stations (saved as CSVs)
 
 08) To calculate & plot SPI 
 ***********************************************************
