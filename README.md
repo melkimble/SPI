@@ -1,9 +1,9 @@
-# SCRIPT FEATURES
+# Features
 * Downloads precipitation data from the National Climate Data Center (NCDC) Climate Data
   Online Web Services.
 	* If the precipitation data has already been downloaded, it checks the last
 	  download date and appends the dataset
-# SETUP
+# Setup
 01) Download or update R and RStudio to versions:
 	R - 3.4.0 "You Stupid Darkness"
     	RStudio - 1.0.143
@@ -17,7 +17,7 @@
 	"ClimateData_API_GUI_daily_Script.R"
 
 ***********************************************************
-# THE GRAPHIC USER ITERFACE (GUI)
+# Graphic User Interface
 03) Open "ClimateData_API_GUI_daily_Script.R" in RStudio
 
 04) CTRL+A then CTRL+R
@@ -55,7 +55,7 @@ the scope of accepted standards for inclusion in the Drought Monitor, like those
 through the development of Territory-specific SPI products would make the Territory automatically eligible for resources and aid from the U.S. Department of Agriculture, an 
 outcome of critical importance to agricultural producers in the USVI. At the development of this application, there were no such products available.  
 
-## METHODS
+## Methods
 The SPEI package in R was utilized to compute the Standardized Precipitation Index for all active stations in the Territory. To calculate the Standard Precipitation Index, 
 a cumulative probability distribution function was derived from monthly accumulated precipitation. The SPEI package allows the user to choose a variety of model fit methods, 
 which include Unbiased Weighted Moments, Plotting-Position PWM, or Maximum Likelihood. The method chosen for fitting the distributions for the Territory was Maximum Likelihood, 
@@ -65,7 +65,7 @@ distribution, SPI values are equivalent to standard deviations from the converte
 smooth SPI values between aggregated months. The SPEI package allows the user to select the shift and type of kernel used, where the type is limited to rectangular or Gaussian. 
 A Gaussian kernel with no shift was selected to smooth aggregated SPI values.
 
-## CALCULATING SPI
+## Calculating SPI
 ### Min SPI Year / Max SPI Year
 Based on feedback from the National Drought Monitor, the desired duration of precipitation data for computing SPI is thirty years, but SPI can be computed at a minimum of fifteen years. 
 These fields allow the user to dynamically adjust which years are used when computing SPI. 
