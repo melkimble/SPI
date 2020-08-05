@@ -1,6 +1,8 @@
 # Features
 * Downloads precipitation data from the National Climate Data Center (NCDC) Climate Data Online Web Services
 * If the precipitation data has already been downloaded, it checks the last download date and appends the dataset
+* Calculates & plots SPI
+
 # Setup
 01) Download or update R and RStudio to versions
 	* R - 3.4.0 "You Stupid Darkness" 
