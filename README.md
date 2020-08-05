@@ -1,41 +1,3 @@
-# Planned updates
-* Initially generated as an appended spreadsheet (at request), the next version will be stored in a database (postgres prefered)
-
-# Features
-* Downloads precipitation data from the National Climate Data Center (NCDC) Climate Data Online Web Services
-* If the precipitation data has already been downloaded, it checks the last download date and appends the dataset
-* Calculates & plots SPI
-
-# Setup
-01) Download or update R and RStudio to versions
-	* R - 3.4.0 "You Stupid Darkness" 
-	* RStudio - 1.0.143
-
-02) Obtain NOAA API Key from this web address
-	* https://www.ncdc.noaa.gov/cdo-web/token
-
-03) These R Files must all be in the same folder
-	* "gWidgets_GUI_Functions.R"
-	* "ClimateData_SPI_GUI_Functions.R"
-	* "ClimateData_API_GUI_daily_Script.R"
-
-***********************************************************
-# Graphic User Interface
-03) Open "ClimateData_API_GUI_daily_Script.R" in RStudio
-
-04) CTRL+A then CTRL+R
-	* The SPI and NOAA API GUI should open in a new window
-
-05) Hold CTRL and click on all weather stations of interest
-	* To download precipitation data, a Personal NOAA API Key is needed. If this is not provided, a web browser will automatically launch.
-
-06) To update/download & plot precipitation data for selected stations
-	* Check "DownloadStationData" 
-	* Click the "Select Daily Ppt Output Folder" button
-	* Select the output folder for Ppt data from weather stations (saved as CSVs)
-
-08) To calculate & plot SPI 
-***********************************************************
 # Documentation
 The Climate Data API/GUI was developed to capture drought conditions by automating the collection of daily accumulated precipitation and calculating the 
 Standardized Precipitation Index at a variety of time-scales and locations. These products serve as an early warning for drought conditions, and are required 
@@ -77,3 +39,44 @@ months used in the SPI calculation. If a month’s coverage falls below the desi
 There are a variety of intervals that SPI can be computed at. Included in the Climate Data API/GUI are SPI 1:12, 24, and 48. These are denoted as “SPI#” from a drop-down menu. Each 
 are aggregates of a series of months starting at 1, where “SPI1” is one month SPI, “SPI2” is two month SPI, and so on. When SPI is computed for more than 1 month, a user specified kernel 
 is used to smooth the values between aggregated months.   
+
+***********************************************************
+
+# Planned updates
+* Initially generated as an appended spreadsheet (at request), the next version will be stored in a database (postgres prefered)
+
+# Features
+* Downloads precipitation data from the National Climate Data Center (NCDC) Climate Data Online Web Services
+* If the precipitation data has already been downloaded, it checks the last download date and appends the dataset
+* Calculates & plots SPI
+
+# Setup
+01) Download or update R and RStudio to versions
+	* R - 3.4.0 "You Stupid Darkness" 
+	* RStudio - 1.0.143
+
+02) Obtain NOAA API Key from this web address
+	* https://www.ncdc.noaa.gov/cdo-web/token
+
+03) These R Files must all be in the same folder
+	* "gWidgets_GUI_Functions.R"
+	* "ClimateData_SPI_GUI_Functions.R"
+	* "ClimateData_API_GUI_daily_Script.R"
+
+***********************************************************
+# Graphic User Interface
+03) Open "ClimateData_API_GUI_daily_Script.R" in RStudio
+
+04) CTRL+A then CTRL+R
+	* The SPI and NOAA API GUI should open in a new window
+
+05) Hold CTRL and click on all weather stations of interest
+	* To download precipitation data, a Personal NOAA API Key is needed. If this is not provided, a web browser will automatically launch.
+
+06) To update/download & plot precipitation data for selected stations
+	* Check "DownloadStationData" 
+	* Click the "Select Daily Ppt Output Folder" button
+	* Select the output folder for Ppt data from weather stations (saved as CSVs)
+
+08) To calculate & plot SPI 
+
