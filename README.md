@@ -1,5 +1,5 @@
 # Planned updates
-* Initially was generated as an appended spreadsheet (at request), the next version will be stored in a database (postgres prefered)
+* Initially generated as an appended spreadsheet (at request), the next version will be stored in a database (postgres prefered)
 
 # Features
 * Downloads precipitation data from the National Climate Data Center (NCDC) Climate Data Online Web Services
